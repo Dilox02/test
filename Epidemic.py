@@ -7,6 +7,7 @@ B = 2
 BETA = B / (N-1)
 PACKETLOSS = 0
 MODIFICA = True
+NEW_NODI_PER_EPOCA=1000
 blue = (0, 0, 255)
 red = (255, 0, 0)
 green=(0,255,0)
@@ -70,7 +71,7 @@ def aggiungi_a_gli_infetti(nodo):
 def add_node():
     print("ciao")
     if MODIFICA:
-        for j in range(1000):
+        for j in range(NEW_NODI_PER_EPOCA):
             x, y = generate_unique_pairs()
             nodo=Node(x,y)
             nodo.color=green
